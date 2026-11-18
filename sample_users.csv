@@ -1,0 +1,10 @@
+
+username,email,status
+jsmith,jsmith@example.com,active
+mjones,mjones@example.com,inactive
+bwilliams,,active
+tjohnson,tjohnson@example.com,active
+jsmith,jsmith2@example.com,active
+agarcia,agarcia@example.com,inactive
+dlee,,inactive
+kroberts,kroberts@example.com,active
