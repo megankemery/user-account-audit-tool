@@ -1,0 +1,31 @@
+
+name: User Account Audit
+
+on:
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+
+    steps:
+      - name: Download repository files
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run account audit
+        run: python audit_users.py
+
+      - name: Upload audit report
+        uses: actions/upload-artifact@v4
+        with:
+          name: user-account-audit-report
+          path: sample_audit_report.csv
+          if-no-files-found: error
