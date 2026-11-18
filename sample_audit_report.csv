@@ -1,0 +1,6 @@
+username,email,status,issues
+mjones,mjones@example.com,inactive,Inactive account
+bwilliams,,active,Missing email address
+jsmith,jsmith2@example.com,active,Duplicate username
+agarcia,agarcia@example.com,inactive,Inactive account
+dlee,,inactive,Inactive account; Missing email address
